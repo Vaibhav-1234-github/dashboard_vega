@@ -143,6 +143,7 @@ if __name__ == "__main__":
  #putting  the dropdown 
  rows = [('*UNK*')]
  clicked_2 = tk.StringVar()
+ clicked_2.set("*UNK*")
  dropdown = tk.OptionMenu(drop_down_frm , clicked_2 , *rows)
  dropdown.config(width=15)
  dropdown.grid(row=1,column=1)
@@ -152,6 +153,7 @@ if __name__ == "__main__":
  drop_label_3.grid(row=0,column=2,padx=10)
  rows =  [('dag_name'), ('dag_name2'), ('dag_name42'), ('dag_name44'), ('dag_name45'), ('gcp_terraform_n'), ('dag_name46')]
  clicked_3 = tk.StringVar()
+ clicked_3.set("dag_name45")
  dropdown = tk.OptionMenu(drop_down_frm , clicked_3 , *rows)
  dropdown.config(width=15)
  dropdown.grid(row=1,column=2)
@@ -163,6 +165,7 @@ if __name__ == "__main__":
  #putting the dropdown 
  rows = [('task_dq'), ('task_dq_1')]
  clicked_4 = tk.StringVar()
+ clicked_4.set("task_dq")
  dropdown = tk.OptionMenu(drop_down_frm , clicked_4 , *rows)
  dropdown.config(width=15)
  dropdown.grid(row=1,column=3)
@@ -174,6 +177,7 @@ if __name__ == "__main__":
  query = 'SELECT distinct  test_case_status "Test Case Status" FROM beat_results_dev.vw_dv_summary_rpt;'
  rows = [('PASS'), ('Undefined'), ('IN Progress')]
  clicked_5 = tk.StringVar()
+ clicked_5.set("PASS")
  dropdown = tk.OptionMenu(drop_down_frm , clicked_5 , *rows)
  dropdown.config(width=15)
  dropdown.grid(row=1,column=4)
